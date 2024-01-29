@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:textfield/constants/app_colors.dart';
 
 class Input extends StatelessWidget {
   final TextEditingController? controllerInput;
@@ -42,6 +43,8 @@ class Input extends StatelessWidget {
               fontSize: 20,
             ),
             errorText: errorText,
+            errorStyle:
+                TextStyle(color: HexColor(AppColors.warning), fontSize: 12),
             filled: true,
             fillColor: HexColor(input ?? 'ffffff'),
             prefixIcon: prefixIcon != null
@@ -56,7 +59,7 @@ class Input extends StatelessWidget {
             ),
           ),
           style: TextStyle(color: HexColor(colorPlaceholder ?? '000000')),
-          validator: validator, // Usa a função de validação fornecida
+          validator: validator,
         ),
         SizedBox(height: 25),
       ],
