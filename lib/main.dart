@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 
+import 'screens/homepage.dart';
 import 'screens/sign_in.dart';
 import 'screens/sign_up.dart';
 
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => SignIn(),
         '/signup': (context) => SignUp(),
+        '/home': (context) => HomePage(),
       },
     );
   }
