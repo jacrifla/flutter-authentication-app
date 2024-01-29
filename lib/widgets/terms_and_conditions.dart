@@ -27,6 +27,7 @@ class TermsAndConditions extends StatelessWidget {
               'Terms And Conditions',
               style: TextStyle(
                   color: HexColor('FFFFFF'),
+                  fontWeight: FontWeight.w600,
                   decoration: TextDecoration.underline,
                   decorationColor: HexColor('ffffff')),
             ))
